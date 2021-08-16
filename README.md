@@ -1,7 +1,7 @@
 # DataScience-Capstone2-Housing
  
  
- ##Data Wrangling
+ ## Data Wrangling
  
    [Notebook](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Notebooks/Housing_DataWrangling.ipynb)
    
