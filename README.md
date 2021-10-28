@@ -5,10 +5,12 @@
 
 Kaggle, a subsidiary of Google LLC, is an online community of data scientists and machine learning practitioners. It is an environment that offers cool learning environments, data, and competitions for aspiring data scientists like me to grow. One such competition is the House Prices - Advanced Regression Techniques. With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home. The data of which can be accessible through the following means below:
 
-> * [Kaggle Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
+> - [Kaggle Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
 
 > - Kaggle API Command
  >   - kaggle competitions download -c house-prices-advanced-regression-techniques
+
+> - [Original Data Set Report](http://jse.amstat.org/v19n3/decock.pdf)
 
 
 ## 2. Method
