@@ -31,3 +31,12 @@ There are various ways to go about analyzing this data. Especially amongst the v
 
 [Pandas Profile Report](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Reports/Housing_Data_Report.html)
 
+## 4. EDA
+
+## 5. Algorithms
+
+## 6. Predictions
+
+## 7. Future Improvements
+
+## >9000. Cliffnotes and learnings
