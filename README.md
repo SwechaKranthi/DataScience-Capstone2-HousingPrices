@@ -37,12 +37,12 @@ There are various ways to go about analyzing this data. Especially amongst the v
 Data Cleaning is about 50% of the task of a Data Scientist. The accuracy of a predictive model depends highly on the quality of the data you feed it. In this step, we closely understand the data and verify what sort of cleaning procedures we need to perform to improve the quality of the data set. Now, there are many ways to check for the quality of data and how to clean it, but I can boil down my cleaning process in the following steps:
 
 - Identify and Delete That Contain a Single Value
- - almost all columns had atleast 2 distinct values. 
+  - almost all columns had atleast 2 distinct values. 
 - Consider Columns That Have Very Few Values
   - given some columns are catagorical data, there were a few columns that have less than 7 different values in sample of 1459 rows of data. 
 - Remove Columns That Have A Low Variance
- - This is an idea known as low variance filtering. As we know, Variance measures the dispersion of data realtive to its mean. Measuring the variance of different columns gives us an idea of the features that impact or not-impact our target variable - the sale price. To keep it simple, I decided to use 0 as the threshhold for low variance filter. As we know, None of the features had 0 variance or only 1 distinct value, so we didn't remove any columns. 
-   - Normalizing the data is a pre-requesite to low variance filtering. It makes sure that no column is overvalued by reducing the range of all columns to a float between 0 and 1. This bring me to a potential mistake of my analysis. I standardized my data instead of normalizing due to the presence of different units of data. Standardization also works best under the assumption that the distribution of the data follows a normal bell-shaped curve. This is something we didn't check for and should be addressed in future modelling. 
+  - This is an idea known as low variance filtering. As we know, Variance measures the dispersion of data realtive to its mean. Measuring the variance of different columns gives us an idea of the features that impact or not-impact our target variable - the sale price. To keep it simple, I decided to use 0 as the threshhold for low variance filter. As we know, None of the features had 0 variance or only 1 distinct value, so we didn't remove any columns. 
+    - Normalizing the data is a pre-requesite to low variance filtering. It makes sure that no column is overvalued by reducing the range of all columns to a float between 0 and 1. This bring me to a potential mistake of my analysis. I standardized my data instead of normalizing due to the presence of different units of data. Standardization also works best under the assumption that the distribution of the data follows a normal bell-shaped curve. This is something we didn't check for and should be addressed in future modelling. 
 - Identify and Delete that Contain Duplicate Data
   - There were no duplicates in the datasets provided by kaggle. This step can be avoided. 
 - Address Missing Values 
