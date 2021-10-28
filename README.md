@@ -57,6 +57,11 @@ Data Cleaning is about 50% of the task of a Data Scientist. The accuracy of a pr
 
 ## 4. EDA
 
+ For EDA, we used pandas profiling to automate the process of exploring data. We generated a pandas profiling report that allows us to view the distributions of the data and the various coorelations between the dependent and target features. 
+ 
+ [Pandas Profile Report for cleaned data](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Reports/Housing_Data_Report_CleanedData.html)
+
+
 ## 5. Algorithms
 
 ## 6. Predictions
