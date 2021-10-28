@@ -28,5 +28,6 @@ There are various ways to go about analyzing this data. Especially amongst the v
 ## 3. Data Cleaning 
 
 [Data Wrangling Report](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Notebooks/Housing_DataWrangling.ipynb)
+
 [Pandas Profile Report](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Reports/Housing_Data_Report.html)
 
