@@ -49,11 +49,11 @@ Data Cleaning is about 50% of the task of a Data Scientist. The accuracy of a pr
   - I checked for counts of values that had a null value. In doing so I can determine what percentage of each feature was missing values. I then determined that any feature that had more than 50% missing values can be deemed unimportant. However, all columns were kept for further analysis to avoid loss of important variables.  We had 19 columns with some missing values. 4 of these columns had more than 50% missing values: Pool, Miscellaneous Features, Alley, Fence. I decided to replace all null values with their respective fill values. All numerical columns were either filled with mean, median or 0 as their fill value. All catagorical columns had 'None' as their fill value. 
 - Dimensionality Reduction
   - this is a complication topic, so here is a reference to a good [article](https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/) on it. In simple terms, If all features are created equal and we have 5000 feautures in a given data set, how do we determine which of those features are important in predicting our target value. There are many ways of doing this, but I used my two favorites: High Correlation Filtering, and Random Forest. 
-   - High Correlation Filtering is a method where we look at the coorelations between each feature and our target value. We decide to keep the once that coorelate highly with sale price. 
-   - Random Forest is a regression algorithm that has built in feature importance, thus we can avoid manually selecting for features and use everything to build our model. 
+    - High Correlation Filtering is a method where we look at the coorelations between each feature and our target value. We decide to keep the once that coorelate highly with sale price. 
+    - Random Forest is a regression algorithm that has built in feature importance, thus we can avoid manually selecting for features and use everything to build our model. 
 - Processing Categorical & Numerical Data
- - **Numerical Data** needs to be adjusted for any skewness in it's distribution. This is to prevent misleading the models and generating wrong predictions. 
- - **Catagorical Data** is better designed for classification problems. It is hard to use catagorical data to creation regressions. To solve this problem, we encode each of our catagorical features into a series of numerical features to represent it's respective catagory. 
+  - **Numerical Data** needs to be adjusted for any skewness in it's distribution. This is to prevent misleading the models and generating wrong predictions. 
+  - **Catagorical Data** is better designed for classification problems. It is hard to use catagorical data to creation regressions. To solve this problem, we encode each of our catagorical features into a series of numerical features to represent it's respective catagory. 
 
 ## 4. EDA
 
