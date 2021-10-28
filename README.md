@@ -64,6 +64,17 @@ Data Cleaning is about 50% of the task of a Data Scientist. The accuracy of a pr
 
 ## 5. Algorithms
 
+For Modeling, I used the Scikit-learn library and it's selection of regression algorithms. I also used XGBoost library for its Gradient Boosting Regressor. I then determined the validity of the model using R^2 values and mean squared errors as a metric for accuracy. For future iterations, I intend to use pycaret's models since the pycaret library is more streamlined and automated to optimized for the parameters of each modelling algorithm. 
+
+In this iteration, the models I used are:
+
+ - LogisticRegression
+ - RandomForestRegressor
+ - Extreme Gradient Boosting (XGBoost) 
+ - Linear Model: RidgeCV
+ - Linear Model: Lasso
+ - Linear Model: ElasticNet
+
 ## 6. Predictions
 
 ## 7. Future Improvements
