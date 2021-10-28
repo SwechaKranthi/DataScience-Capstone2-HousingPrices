@@ -33,6 +33,28 @@ There are various ways to go about analyzing this data. Especially amongst the v
 
 [Pandas Profile Report](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Reports/Housing_Data_Report.html)
 
+
+Data Cleaning is about 50% of the task of a Data Scientist. The accuracy of a predictive model depends highly on the quality of the data you feed it. In this step, we closely understand the data and verify what sort of cleaning procedures we need to perform to improve the quality of the data set. Now, there are many ways to check for the quality of data and how to clean it, but I can boil down my cleaning process in the following steps:
+
+- Identify and Delete That Contain a Single Value
+ - almost all columns had atleast 2 distinct values. 
+- Consider Columns That Have Very Few Values
+  - given some columns are catagorical data, there were a few columns that have less than 7 different values in sample of 1459 rows of data. 
+- Remove Columns That Have A Low Variance
+ - This is an idea known as low variance filtering. As we know, Variance measures the dispersion of data realtive to its mean. Measuring the variance of different columns gives us an idea of the features that impact or not-impact our target variable - the sale price. To keep it simple, I decided to use 0 as the threshhold for low variance filter. As we know, None of the features had 0 variance or only 1 distinct value, so we didn't remove any columns. 
+   - Normalizing the data is a pre-requesite to low variance filtering. It makes sure that no column is overvalued by reducing the range of all columns to a float between 0 and 1. This bring me to a potential mistake of my analysis. I standardized my data instead of normalizing due to the presence of different units of data. Standardization also works best under the assumption that the distribution of the data follows a normal bell-shaped curve. This is something we didn't check for and should be addressed in future modelling. 
+- Identify and Delete that Contain Duplicate Data
+  - There were no duplicates in the datasets provided by kaggle. This step can be avoided. 
+- Address Missing Values 
+  - I checked for counts of values that had a null value. In doing so I can determine what percentage of each feature was missing values. I then determined that any feature that had more than 50% missing values can be deemed unimportant. However, all columns were kept for further analysis to avoid loss of important variables.  We had 19 columns with some missing values. 4 of these columns had more than 50% missing values: Pool, Miscellaneous Features, Alley, Fence. I decided to replace all null values with their respective fill values. All numerical columns were either filled with mean, median or 0 as their fill value. All catagorical columns had 'None' as their fill value. 
+- Dimensionality Reduction
+  - this is a complication topic, so here is a reference to a good [article](https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/) on it. In simple terms, If all features are created equal and we have 5000 feautures in a given data set, how do we determine which of those features are important in predicting our target value. There are many ways of doing this, but I used my two favorites: High Correlation Filtering, and Random Forest. 
+   - High Correlation Filtering is a method where we look at the coorelations between each feature and our target value. We decide to keep the once that coorelate highly with sale price. 
+   - Random Forest is a regression algorithm that has built in feature importance, thus we can avoid manually selecting for features and use everything to build our model. 
+- Processing Categorical & Numerical Data
+ - **Numerical Data** needs to be adjusted for any skewness in it's distribution. This is to prevent misleading the models and generating wrong predictions. 
+ - **Catagorical Data** is better designed for classification problems. It is hard to use catagorical data to creation regressions. To solve this problem, we encode each of our catagorical features into a series of numerical features to represent it's respective catagory. 
+
 ## 4. EDA
 
 ## 5. Algorithms
