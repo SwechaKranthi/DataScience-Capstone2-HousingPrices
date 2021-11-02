@@ -110,5 +110,5 @@ Thank you to Raghunandhan Patthar for being an awesome Springboard Mentor. Thank
 
 ## >9000. Cliffnotes and learnings
 
-I am gonna create new notebook at link it here. It should contain a cleaner streamlined version of the project. I will also indicate/describe the stattistics and data theory behind how this project works. 
+I am gonna create a new notebook and link it here. It should contain a cleaner streamlined version of the project. I will also indicate/describe the statistics and data theory behind how this project works. 
 
