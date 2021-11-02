@@ -104,7 +104,7 @@ It Produced the prediction sample seen below:
 
 -  I would love to expand this project to larger data sets of sales from Zillow and Trulia detailing all the sales from the last 3 years and include data from the covid years.
 
-##8. Credits
+## 8. Credits
 
 Thank you to Raghunandhan Patthar for being an awesome Springboard Mentor. Thank you Moez Ali for making such an amazing tool like PyCaret. Thank you Dr. Dean DeCock from Truman State University for creating the data set that I was able to work on and learn from. 
 
