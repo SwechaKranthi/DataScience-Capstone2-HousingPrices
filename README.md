@@ -83,6 +83,7 @@ For the second iteration, I used pycaret's models since the pycaret library is m
 ## 6. Predictions
 
  [Pycaret Modeling Notebook](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Notebooks/Housing_Modeling_pycaret.ipynb)
+ 
  [Predictions Data](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/data/Final_Predictions.csv)
  
 In the final predictions notebook, We can see pycaret working through all sorts of regression algorithms to find the best one. We optimized for the mean absolute error and used R^2 and Root Mean square error values to determine the best model. Baysian Ridge Regressor turned out to be the best Model with an accuracy of 88.47% and an RMSE value of 0.1216. 
