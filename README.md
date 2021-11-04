@@ -82,6 +82,34 @@ For the second iteration, I used pycaret's models since the pycaret library is m
 
 ## 6. Predictions
 
+ [Pycaret Modeling Notebook](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/Notebooks/Housing_Modeling_pycaret.ipynb)
+ 
+ [Predictions Data](https://github.com/SwechaKranthi/DataScience-Capstone2-HousingPrices/blob/main/data/Final_Predictions.csv)
+ 
+In the final predictions notebook, We can see pycaret working through all sorts of regression algorithms to find the best one. We optimized for the mean absolute error and used R^2 and Root Mean square error values to determine the best model. Baysian Ridge Regressor turned out to be the best Model with an accuracy of 88.47% and an RMSE value of 0.1216. 
+
+We used this insight to build a Baysian Ridge Predictive model:
+
+![BR_Models](./images/BR%20Model%20Optimization.png)
+
+It Produced the prediction sample seen below:
+
+![Predictions](./images/Predictions.png)
+
+
 ## 7. Future Improvements
 
+- In the future, I would love to spend more time creating a cleaner data set. This is my second time properly cleaning large datasets, I could improve my process by more closely understanding the data and optimizing for data skews better.
+
+- This modeling could also be iproved my better optimizing for all the parameters that Baysian Ridge Regressor offers. 
+
+-  I would love to expand this project to larger data sets of sales from Zillow and Trulia detailing all the sales from the last 3 years and include data from the covid years.
+
+## 8. Credits
+
+Thank you to Raghunandhan Patthar for being an awesome Springboard Mentor. Thank you Moez Ali for making such an amazing tool like PyCaret. Thank you Dr. Dean DeCock from Truman State University for creating the data set that I was able to work on and learn from. 
+
 ## >9000. Cliffnotes and learnings
+
+I am gonna create a new notebook and link it here. It should contain a cleaner streamlined version of the project. I will also indicate/describe the statistics and data theory behind how this project works. 
+
